@@ -1,0 +1,22 @@
+cc_binary(
+  name = "simple_ex1",
+  srcs = [
+    "simple_ex1.cc",
+  ],
+  deps = [
+    "@//third_party/openssl:openssl64",
+    "@//third_party/cpp-jwt:cpp_jwt"
+  ],  
+)
+
+cc_binary(
+  name = "simple_ex2",
+  srcs = [
+    "simple_ex2.cc",
+  ],
+  deps = [
+    "@//third_party/openssl:openssl64",
+    "@//third_party/cpp-jwt:cpp_jwt"
+  ],  
+)
+
